@@ -1,0 +1,359 @@
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url("fontello.css");
+@import url(./reset.css);
+/* 숨김 콘텐츠 */
+legend,
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+/* 링크스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* 루트 요소 */
+html {
+  font-size: 10px;
+}
+/* 본문 */
+body {
+  background-color: #ccc;
+  font-family: 'Spoqa Han Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+/* 레이아웃 공통 */
+.header,
+.visual,
+.main,
+.slogan,
+.footer-inner {
+  width: 940px;
+  margin: 0 auto;
+}
+/* 헤더 */
+.header {
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 0 30px 50px;
+  position: relative;
+}
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+}
+/* 회원 서비스 */
+.member {
+  position: relative;
+  right: -10px;
+  text-align: right;
+  padding: 2px 0;
+}
+.member li {
+  display: inline-block;
+}
+.member a {
+  display: inline-block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+
+/* 내비게이션 */
+.navigation {
+  background-color: orange;
+  border-top: 2px solid #000;
+  height: 50px;
+}
+/* 비주얼 */
+.visual {
+  background-color: lime;
+}
+/* 메인 콘텐츠 */
+.main {
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 30px 15px;
+  min-height: 450px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+/* .main::after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+/* .group {
+  float: left;
+  margin: 0 15px;
+  height: 100px;
+} */
+.group1 {
+  width: 250px;
+}
+.group2 {
+  width: 380px;
+}
+.group3 {
+  width: 190px;
+}
+/* 로그인 */
+.login {
+  background: radial-gradient(circle at right top, #e8852e, #ed552f);
+  border-radius: 5px;
+  padding: 10px;
+}
+.login-heading {
+  text-indent: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff0;
+}
+.login-form {
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+.login-form fieldset {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+.user-pw {
+  margin-top: 3px;
+}
+.login-form label {
+  display: inline-block;
+  width: 4em;
+  font-size: 1.3rem;
+}
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 1px 1px 1px 0.5em;
+}
+.login-form label,
+.login-form input {
+  vertical-align: middle;
+}
+.btn-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e8852e;
+  border-radius: 3px;
+  background-color: #ed552f;
+  color: #fff;
+  padding: 0;
+}
+.sign {
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.3rem;
+  justify-content: space-between;
+}
+.sign li::before {
+  width: auto;
+  margin-left: 0;
+  color: #ed552f;
+}
+/* 유효성 검사 배너 */
+.validation-list {
+  margin-top: 20px;
+}
+.validation-list a {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  padding: 6px 10px 6px 45px;
+  margin-top: 10px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%,
+    linear-gradient(#ccc, #eee);
+}
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
+.term-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list {
+  margin-top: 10px;
+}
+.term-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.term-list-subject {
+  float: right;
+  width: 145px;
+  margin-top: -5px;
+  color: #296897;
+}
+.term-list-thumbnail {
+  float: left;
+}
+.term-list-thumbnail img {
+  vertical-align: top;
+}
+.term-list-brief {
+  width: 145px;
+  float: right;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+/* 검색 폼 */
+.search {
+  background: #ccc linear-gradient(#ccc, #fff);
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+}
+.search-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.search input {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 24px;
+  padding: 2px 2px 2px 0.5em;
+  margin: 0 0.5em;
+  flex-grow: 1;
+}
+.btn-search {
+  background-color: #333;
+  color: #fff;
+  padding: 0 10px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 1.3rem;
+}
+/* 공지시항 및 자료실  */
+.board {
+  margin-top: 20px;
+  position: relative;
+  min-height: 200px;
+}
+.notice-list,
+.pds-list,
+.notice-more,
+.pds-more {
+  display: none;
+}
+.tab-act .notice-list,
+.tab-act .pds-list,
+.tab-act .notice-more,
+.tab-act .pds-more {
+  display: block;
+}
+
+.tab {
+  /* float: left; */
+  position: absolute;
+  top: 0;
+}
+.notice-heading {
+  left: 0;
+}
+.pds-heading {
+  left: 73px;
+}
+.tab-act .tab {
+  z-index: 10;
+}
+.tab a {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  background: #ccc linear-gradient(#ccc, #fff);
+  color: #999;
+}
+.tab-act .tab a {
+  background: #fff;
+  color: #ed552f;
+  border-color: #ed552f #ed552f #fff #ed552f;
+}
+.notice-list,
+.pds-list {
+  padding-top: 45px;
+}
+
+.notice-list li,
+.pds-list li {
+  /* display: flex;
+  flex-flow: row nowrap; */
+  margin-top: 10px;
+}
+.notice-list li *,
+.pds-list li * {
+  vertical-align: middle;
+}
+.notice-list a,
+.pds-list a {
+  display: inline-block;
+  /* flex-grow: 1; */
+  width: calc(100% - 103px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.notice-more,
+.pds-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+.notice-more::before,
+.pds-more::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+/* 슬로건 */
+.slogan {
+  background-color: skyblue;
+  clear: both;
+}
+/* 푸터 */
+.footer {
+  background-color: purple;
+}
+.footer-inner {
+  background-color: orange;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹카페 - 고정형 레이아웃 실습 예제</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class ="logo"><a heref="#"><img src="./images/logo.png" alt="Web Cafe"></img></h1>
+        <ul class="member">
+            <li><a href="#">홈</a></li>
+            <li><span class="divider" aria-hidden="true">:</span><a href="#">로그인</a></li>
+            <li><span class="divider" aria-hidden="true">:</span><a href="#">회원가입</a></li>
+            <li><span class="divider" aria-hidden="true">:</span><a href="#">사이트맵</a></li>
+            <li><span class="divider" aria-hidden="true">:</span><a href="#">english</a></li>
+        </ul>
+        <nav class="navigation">내비게이션</nav>  
+        <link rel="stylesheet" href="./css/main.css">
+    </header>
+    <div class ="visual">비주얼</div>
+    <main class="main">
+        <div class="group group1">
+            <section class ="login">
+                <h2 class="login-heading">로그인</h2>
+                <form method="POST" action="https://formspree.io/seulbinim@gmail.com" 
+                class="login-form" >
+                <fieldset>
+                    <legend> 로그인 폼</legend>
+                    <div class="user-email">
+                        <label for="userEmail">아이디</label>
+                        <input type="email" id="userEmail" name="userEmail" 
+                        placeholder="이메일형식" required />
+                    </div>
+                    <div class="user-pw">
+                        <label for="userPw">비밀번호</label>
+                        <input type="password" id="userPw" name="userPw" 
+                        placeholder="8자리 이상" required />
+                    </div>
+                    <button class="btn-login" type="submit">로그인</button>
+                </fieldset>    
+            </form>
+            <ul class="sign">
+                <li class="icon-right-open"><a href="#" >회원가입</a></li>
+                <li class="icon-right-open"><a href="#">아이디/비밀번호 찾기</a></li>
+            </ul>
+            </section>
+            <section class="validation">
+                <h2 class="a11y-hidden">
+                    유효성 검사 배너
+                </h2>
+                <ul class="validation-list">
+                    <li>
+                        <a href="https://validator.w3.org/" target="_blank" title="마크업 유효성 검사 사이트로 이동(새창)">
+                          W3C Markup Validation
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="CSS 유효성 검사 사이트로 이동(새창)">
+                          CSS Validation Service
+                        </a>
+                      </li>
+                </ul>
+
+            </section>
+            <section class="term">
+                <h2 class="term-heading">웹 관련 용어</h2>
+                <dl class="term-list">
+                    <dt class="term-list-subject">웹 표준 이란?</dt>
+                    <dd class="term-list-thumbnail">
+                        <img src="./images/web_standards.gif" alt="W3c">
+                    </dd>
+                    <dd class="term-list-breif">
+                        W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
+                    </dd>
+                </dl>
+            </section>
+        </div>
+        <div class="group group2">
+        <section class="search">
+            <h2 class="a11y-hidden">제목</h2>
+            <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="search-form">
+            <fieldset>
+                <legend>검색 폼</legend>
+                <div class="serach">
+                    <label for="search"><span class="icon-search"></span> 자료검색</label>
+                    <input type="search" id="search" placeholder="검색어를 입력하세요." required="required"
+                    name="search"> </input>
+                    <button class="btn-search" tyep="submit">검색</button>   
+                </div>
+            </fieldset>
+            </form>
+        </section>
+        <div class="board">
+            <section class="notice tab-act">
+              <h2 class="notice-heading tab"><a href="#" role="button">공지사항</a></h2>
+              <ul class="notice-list">
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">W3C 사이트 리뉴얼 및 공지사항</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">KWCAG 2.1 소식</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+              </ul>
+              <a href="#" class="icon-plus notice-more" title="공지사항">더보기</a>
+            </section>
+            <section class="pds">
+              <h2 class="pds-heading tab"><a href="#" role="button">자료실</a></h2>
+              <ul class="pds-list">
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">디자인 사이트 링크 모음</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">웹 접근성 관련 자료 모음</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">예제 샘플 응용해보기</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">웹 접근성 향상을위한 국가 표준 기술 가이드라인</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+                <li>
+                  <span class="icon-dot-circled"></span>
+                  <a href="#">로얄티 프리 이미지 자료</a>
+                  <time datetime="2020-11-02T10:24:17">2020.11.02</time>
+                </li>
+              </ul>
+              <a href="#" class="icon-plus pds-more" title="자료실">더보기</a>
+            </section>
+          </div>
+        <section class="news">
+            <h2 class="news-heading">새소식</h2>
+            <article class="news-article">
+              <h3 class="news-article-subject">W3C 사이트가 리뉴얼되었습니다.</h3>
+              <time class="news-article-date" datetime="2020-11--2T11:49:15">2020.11.02</time>
+              <p class="news-article-brief">
+                디자인 및 다양한 view 환경을 고려하여 구성되어 있으며,
+                기존보다 최신 정보 및 개발자를 위한 기술 가이드도
+                찾기 쉽도록 구성되어 있습니다.
+              </p>
+              <figure class="news-article-thumbnail">
+                <img src="./images/news.gif" alt="" />
+                <figcaption>W3C 리뉴얼</figcaption>
+              </figure>
+            </article>
+            <a href="#" class="icon-plus news-more" title="새소식">더보기</a>
+          </section>
+    </div>
+        <div class="group group3">그룹3</div>
+    </main>
+    <article class = "slogan">슬로건</article>
+    <footer class="footer">
+        <div class="footer-inner">푸터</div>
+    </footer>
+</body>
+</html>
